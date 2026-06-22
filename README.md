@@ -29,4 +29,6 @@
 | 4.2    | Investment analytics                          | CTF    | CTF_Skillbox-invest.png | 4_CTF/              |
 | 4.3    | Algorithms and data structures                | CTF    | CTF_VK-Algorithms.jpg   | 4_CTF/              |
 | 4.4    | VTB league                                    | CTF    | CTF_VTB league.jpg      | 4_CTF/              |
+| 4.5    | HSE "Your project"                            | CTF    | CTF_HSE-Your project.jpg| 4_CTF/              |
 | **5**  | **Glossary**                                  | **BSA**| **BSA_glossary.xlsx**   |
+
