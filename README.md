@@ -1,39 +1,35 @@
-## Lasukova Aneta | System/business analyst
+## Ласукова Анета | Системный/бизнес аналитик
 
 
 
-### Table of contents
-*converted all .xlsx files to .csv for easier review
-| Number | Name of the registry / artifact               | Prefix | Name of file                | Name of directory   |
+### Содержание
+*все файлы для удобства конвертированы из .xlsx в .csv
+| №      | Номер реестра/артефакта                       | Префикс| Наименование файла          | Название директории |
 |:------:|-----------------------------------------------|:------:|:---------------------------:|:-------------------:|
-| **1**  | **Barbershop**                                | **BBS**|
-| 1.0    | Description of project                        | BBS    | README.md                   | 1_BBS/              |
-| 1.1    | Registry of infosources                       | BBS    | 1_BBS_infosources.csv       | 1_BBS/              |
-| 1.2    | List of stakeholders                          | BBS    | 2_BBS_list stakeholders.csv | 1_BBS/              |
-| 1.3    | Interests, needs and problems of stakeholders | BBS    | 3_BBS_stakeholders.csv      | 1_BBS/              |
-| 1.4    | Onion diagram                                 | BBS    | 4_BBS_onion.jpg             | 1_BBS/              |
-| 1.5    | State table "As is" and "To be"               | BBS    | 5_BBS_tobe.csv              | 1_BBS/              |
-| 1.6    | Context diagram                               | BBS    | 6_BBS_context.jpg           | 1_BBS/              |
-| 1.7    | Table of input/output data streams            | BBS    | 7_BBS_streams.csv           | 1_BBS/              |
-| 1.8    | Glossary                                      | BBS    | 8_BBS_glossary.csv          | 1_BBS/              |
-| **2**  | **Delivery**                                  | **DVR**|
-| 2.0    | Description and vision of project             | DVR    | README.md                   | 2_DVR/              |
-| 2.1    | Registry of infosources                       | DVR    | 1_DVR_infosources.csv       | 2_DVR/              |
-| 2.2    | List of stakeholders                          | DVR    | 2_DVR_list stakeholders.csv | 2_DVR/              |
-| 2.3    | Interests, needs and problems of stakeholders | DVR    | 3_DVR_stakeholders.csv      | 2_DVR/              |
-| 2.4    | Onion diagram                                 | DVR    | 4_DVR_onion.jpg             | 2_DVR/              |
-| 2.5    | State table "As is" and "To be"               | DVR    | 5_DVR_tobe.csv              | 2_DVR/              |
-| 2.6    | Context diagram                               | DVR    | 6_DVR_context.jpg           | 2_DVR/              |
-| 2.7    | Table of input/output data streams            | DVR    | 7_DVR_streams.csv           | 2_DVR/              |
-| 2.8    | Glossary                                      | DVR    | 8_DVR_glossary.csv          | 2_DVR/              |
-| **3**  | **Investment analytics**                      | **INV**|
-| 3.1    | Fair value of X5 Group                        | INV    | 1_INV_finmodel.xlsx         | 3_INV/              |
-| 3.2    | Investment valuation of X5 Group              | INV    | 2_INV_invect.pdf            | 3_INV/              |
-| **4**  | **Certifications**                            | **CTF**|
-| 4.1    | I'm in deal                                   | CTF    | 1_CTF_Im in deal.png        | 4_CTF/              |
-| 4.2    | Investment analytics                          | CTF    | 2_CTF_Skillbox-invest.png   | 4_CTF/              |
-| 4.3    | Algorithms and data structures                | CTF    | 3_CTF_VK-Algorithms.jpg     | 4_CTF/              |
-| 4.4    | VTB league                                    | CTF    | 4_CTF_VTB league.jpg        | 4_CTF/              |
-| 4.5    | HSE "Your project"                            | CTF    | 5_CTF_HSE-Your project.jpg  | 4_CTF/              |
-
-
+| **1**  | **Пет-проект "Барбершоп"**                    | **BBS**|
+| 1.0    | Документ о концепции и границах               | BBS    | README.md                   | 1_BBS/              |
+| 1.1    | Реестр источников информации                  | BBS    | 1_BBS_infosources.csv       | 1_BBS/              |
+| 1.2    | Список стейкхолдеров                          | BBS    | 2_BBS_list stakeholders.csv | 1_BBS/              |
+| 1.3    | Интересы, проблемы и потребности стейкхолдеров| BBS    | 3_BBS_stakeholders.csv      | 1_BBS/              |
+| 1.4    | Луковичная диаграмма                          | BBS    | 4_BBS_onion.jpg             | 1_BBS/              |
+| 1.5    | Таблица состояний "As is" и "To be"           | BBS    | 5_BBS_tobe.csv              | 1_BBS/              |
+| 1.6    | Контекстная диаграмма                         | BBS    | 6_BBS_context.jpg           | 1_BBS/              |
+| 1.7    | Таблица входящих/выходящих потоков данных     | BBS    | 7_BBS_streams.csv           | 1_BBS/              |
+| **2**  | **Приложение для доставки "..."**             | **DVR**|
+| 2.1    | Документ о концепции и границах               | DVR    | README.md                   | 2_DVR/              |
+| 2.1    | Реестр источников информации                  | DVR    | 1_DVR_infosources.csv       | 2_DVR/              |
+| 2.2    | Список стейкхолдеров                          | DVR    | 2_DVR_list stakeholders.csv | 2_DVR/              |
+| 2.3    | Интересы, проблемы и потребности стейкхолдеров| DVR    | 3_DVR_stakeholders.csv      | 2_DVR/              |
+| 2.4    | Луковичная диаграмма                          | DVR    | 4_DVR_onion.jpg             | 2_DVR/              |
+| 2.5    | Таблица состояний "As is" и "To be"           | DVR    | 5_DVR_tobe.csv              | 2_DVR/              |
+| 2.6    | Контекстная диаграмма                         | DVR    | 6_DVR_context.jpg           | 2_DVR/              |
+| 2.7    | Таблица входящих/выходящих потоков данных     | DVR    | 7_DVR_streams.csv           | 2_DVR/              |
+| **3**  | **Инвестиционная аналитика**                  | **INV**|
+| 3.1    | Справедливая стоимость X5 Group               | INV    | 1_INV_finmodel.csv          | 3_INV/              |
+| 3.2    | Investment valuation of X5 Group              | INV    | 2_INV_invect.csv            | 3_INV/              |
+| **4**  | **Сертификаты**                               | **CTF**|
+| 4.1    | Я в деле                                      | CTF    | 1_CTF_Im in deal.png        | 4_CTF/              |
+| 4.2    | Инвестиционная аналитика. Skillbox            | CTF    | 2_CTF_Skillbox-invest.png   | 4_CTF/              |
+| 4.3    | Алгоритмы и структуры данных. VK Education    | CTF    | 3_CTF_VK-Algorithms.jpg     | 4_CTF/              |
+| 4.4    | ВТБ Лига                                      | CTF    | 4_CTF_VTB league.jpg        | 4_CTF/              |
+| 4.5    | ВШЭ "Твой проект"                             | CTF    | 5_CTF_HSE-Your project.jpg  | 4_CTF/              |
