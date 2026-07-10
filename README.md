@@ -17,15 +17,17 @@
 | 1.7    | Таблица входящих/выходящих потоков данных     | BBS    | 07_BBS_streams.csv           | 1_BBS/              |
 | 1.8    | Словарь данных (сущности, типы данных)        | BBS    | 08_BBS_dict.csv              | 1_BBS/              |
 | 1.9    | ER-диаграмма                                  | BBS    | 09_BBS_model.jpg             | 1_BBS/              |
-| **2**  | **Приложение для доставки "..."**             | **DVR**|
-| 2.1    | Документ о концепции и границах               | DVR    | README.md                   | 2_DVR/              |
-| 2.1    | Реестр источников информации                  | DVR    | 1_DVR_infosources.csv       | 2_DVR/              |
-| 2.2    | Список стейкхолдеров                          | DVR    | 2_DVR_list stakeholders.csv | 2_DVR/              |
-| 2.3    | Интересы, проблемы и потребности стейкхолдеров| DVR    | 3_DVR_stakeholders.csv      | 2_DVR/              |
-| 2.4    | Луковичная диаграмма                          | DVR    | 4_DVR_onion.jpg             | 2_DVR/              |
-| 2.5    | Таблица состояний "As is" и "To be"           | DVR    | 5_DVR_tobe.csv              | 2_DVR/              |
-| 2.6    | Контекстная диаграмма                         | DVR    | 6_DVR_context.jpg           | 2_DVR/              |
-| 2.7    | Таблица входящих/выходящих потоков данных     | DVR    | 7_DVR_streams.csv           | 2_DVR/              |
+| **2**  | **Служба доставки "..."**                     | **DVR**|
+| 2.1    | Документ о концепции и границах               | DVR    | README.md                    | 2_DVR/              |
+| 2.1    | Реестр источников информации                  | DVR    | 01_DVR_infosources.csv       | 2_DVR/              |
+| 2.2    | Список стейкхолдеров                          | DVR    | 02_DVR_list stakeholders.csv | 2_DVR/              |
+| 2.3    | Интересы, проблемы и потребности стейкхолдеров| DVR    | 03_DVR_stakeholders.csv      | 2_DVR/              |
+| 2.4    | Луковичная диаграмма                          | DVR    | 04_DVR_onion.jpg             | 2_DVR/              |
+| 2.5    | Таблица состояний "As is" и "To be"           | DVR    | 05_DVR_tobe.csv              | 2_DVR/              |
+| 2.6    | Контекстная диаграмма                         | DVR    | 06_DVR_context.jpg           | 2_DVR/              |
+| 2.7    | Таблица входящих/выходящих потоков данных     | DVR    | 07_DVR_streams.csv           | 2_DVR/              |
+| 2.8    | Словарь данных (сущности, типы данных)        | DVR    | 08_DVR_dict.csv              | 2_DVR/              |
+| 2.9    | ER-диаграмма                                  | DVR    | 09_DVR_model.jpg             | 2_DVR/              |
 | **3**  | **Инвестиционная аналитика**                  | **INV**|
 | 3.1    | Справедливая стоимость X5 Group               | INV    | 1_INV_finmodel.csv          | 3_INV/              |
 | 3.2    | Investment valuation of X5 Group              | INV    | 2_INV_invect.csv            | 3_INV/              |
