@@ -73,7 +73,7 @@
 |st012        | Управляющий| Руководит конкретным филиалом, подчиняется руководителю сети | Средний
 |st013        | Регулятор| Устанавливает требования для системы | Высокий
 
-**более подробно с интересами, потребностями, проблемами стейкхолдеров можно ознакомиться [в файле](https://github.com/milady-anna/portfolio_analyst/blob/master/1_BBS/3_BBS_stakeholders.csv).*
+**более подробно с интересами, потребностями, проблемами стейкхолдеров можно ознакомиться [в файле](https://github.com/milady-anna/portfolio_analyst/blob/master/1_BBS/03_BBS_stakeholders.csv).*
 
 ## Раздел 3. Бизнес-требования.
 
@@ -194,10 +194,10 @@
 
 **роли st001, st007, st008, st011, st013 не имеют прямых действий в системе 1.0. Их взаимодействие с системой осуществляется через других пользователей системы.*
 
-***более подробно с входящими и выходящими потоками данных можно ознакомиться [в файле](https://github.com/milady-anna/portfolio_analyst/blob/master/1_BBS/7_BBS_streams.csv).*
+***более подробно с входящими и выходящими потоками данных можно ознакомиться [в файле](https://github.com/milady-anna/portfolio_analyst/blob/master/1_BBS/07_BBS_streams.csv).*
 
 
-![Контекстная диаграмма](https://github.com/milady-anna/portfolio_analyst/blob/master/1_BBS/6_BBS_context.jpg?raw=true)
+![Контекстная диаграмма](https://github.com/milady-anna/portfolio_analyst/blob/master/1_BBS/06_BBS_context.jpg?raw=true)
 *Рис. 1 . Контекстная диаграмма.*
 
 ### 4.2. Функции, выходящие за границы системы
