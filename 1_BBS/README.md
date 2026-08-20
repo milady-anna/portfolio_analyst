@@ -118,7 +118,7 @@
 9. Обеспечение соответствия нормативным требованиям (налоговое законодательство и СанПиН).
 
 
-**более подробно с состоянием компании TO BE можно ознакомиться [в файле](https://github.com/milady-anna/portfolio_analyst/blob/master/1_BBS/5_BBS_tobe.csv).*
+**более подробно с состоянием компании TO BE можно ознакомиться [в файле](https://github.com/milady-anna/portfolio_analyst/blob/master/1_BBS/05_BBS_tobe.csv).*
 
 ### 3.4. Видение продукта.
 
