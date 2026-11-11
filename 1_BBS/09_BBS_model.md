@@ -1,16 +1,20 @@
-# BBS model — ER-диаграмма
+# Диаграмма классов
 
 ```mermaid
 erDiagram
     CLIENT["Клиент"] {
         int Идентификатор PK
-        string Имя_пользователя
-        string Канал_связи
+        int Персона FK
+    }
+
+    PERSON["Персона"] {
+        int Идентификатор PK
+        string Логин
         string Пароль
         string Номер_телефона
         datetime Дата_регистрации
-        string Статус
-        int Филиал_по_умолчанию FK
+        int Статус_персоны FK
+        int Филиал FK
     }
 
     STAFF_SCHEDULE["Расписание сотрудников"] {
@@ -22,13 +26,7 @@ erDiagram
 
     EMPLOYEE["Сотрудник"] {
         int Идентификатор PK
-        string Имя_пользователя
-        string Пароль
-        string Номер_телефона
-        string Адрес_эл_почты
-        int Филиал FK
-        date Дата_найма
-        string Статус
+        int Персона FK
         int Роль FK
     }
 
@@ -38,24 +36,16 @@ erDiagram
         string Разрешения
     }
 
-    APPOINTMENT["Запись"] {
+    APPOINTMENT["Слот обслуживания"] {
         int Идентификатор PK
         datetime Время_начала
-        datetime Время_окончания
+        datetime Длительность
         int Мастер FK
         int Клиент FK
         int Помещение FK
         int Услуга FK
         string Статус
         string Комментарий_клиента
-    }
-
-    REVIEW["Отзыв"] {
-        int Идентификатор PK
-        string Текст
-        date Дата
-        int Запись FK
-        int Оценка
     }
 
     TRANSACTION["Транзакция"] {
@@ -77,7 +67,7 @@ erDiagram
         string Категория
     }
 
-    QUALIFICATION["Квалификация сотрудников"] {
+    QUALIFICATION["Услуги мастера"] {
         int Сотрудник FK
         int Услуга FK
     }
@@ -94,23 +84,6 @@ erDiagram
         int Вместимость
     }
 
-    CLEANING["Уборка"] {
-        int Идентификатор PK
-        datetime Время_начала
-        datetime Время_окончания
-        int Сотрудник FK
-        int Помещение FK
-        string Статус
-        int График_уборки FK
-    }
-
-    CLEANING_SCHEDULE["График уборок"] {
-        int Идентификатор PK
-        int Длительность
-        string Периодичность
-        string Тип_уборки
-    }
-
     BRANCH["Филиал"] {
         int Идентификатор PK
         string Адрес
@@ -119,20 +92,18 @@ erDiagram
     }
 
     CLIENT ||--|{ APPOINTMENT : "бронирует"
+    CLIENT ||--|| PERSON : "бла"
+    EMPLOYEE ||--|| PERSON : "бла"
+    BRANCH||--|| PERSON : "бла"
     STAFF_SCHEDULE }|--|| EMPLOYEE : "определяет график"
-    EMPLOYEE }|--|| BRANCH : "работает в"
     EMPLOYEE }|--|| ROLE : "является"
-    EMPLOYEE ||--|{ CLEANING : "проводит"
     EMPLOYEE }|--|{ QUALIFICATION : "может проводить"
     SERVICE }|--|{ QUALIFICATION : "проводится"
     EMPLOYEE ||--|{ APPOINTMENT : "проводит"
     SERVICE ||--|{ APPOINTMENT : "выполняется"
     ROOM ||--|{ APPOINTMENT : "проводится в"
-    REVIEW ||--|| APPOINTMENT : "оставлен на"
     APPOINTMENT ||--|{ TRANSACTION : "фиксирует оплату"
     SERVICE }|--|{ SERVICE_ROOM : "может проводиться в"
     ROOM }|--|{ SERVICE_ROOM : "предназначено для"
-    ROOM ||--|| CLEANING : "проводится в"
-    CLEANING_SCHEDULE ||--|{ CLEANING : "планирует"
     ROOM }|--|| BRANCH : "находится в"
 ```
