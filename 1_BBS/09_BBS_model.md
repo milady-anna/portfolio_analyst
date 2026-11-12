@@ -4,6 +4,7 @@
 erDiagram
     CLIENT["Клиент"] {
         int Идентификатор PK
+        date Дата_рождения
         int Персона FK
     }
 
@@ -11,10 +12,18 @@ erDiagram
         int Идентификатор PK
         string Логин
         string Пароль
+        string Имя
+        string Фамилия
+        string Email
         string Номер_телефона
         datetime Дата_регистрации
         int Статус_персоны FK
         int Филиал FK
+    }
+
+    STATUS_PS["Статус персоны"]{
+        int Идентификатор PK
+        string Статус
     }
 
     STAFF_SCHEDULE["Расписание сотрудников"] {
@@ -39,13 +48,19 @@ erDiagram
     APPOINTMENT["Слот обслуживания"] {
         int Идентификатор PK
         datetime Время_начала
-        datetime Длительность
+        int Длительность_мин
         int Мастер FK
         int Клиент FK
         int Помещение FK
         int Услуга FK
-        string Статус
+        decimal Стоимость
+        int Статус_записи FK
         string Комментарий_клиента
+    }
+
+    APPOINTMENT_STATUS["Статус записи"]{
+        int Идентификатор PK
+        string Статус
     }
 
     TRANSACTION["Транзакция"] {
@@ -53,26 +68,28 @@ erDiagram
         datetime Время
         string Тип
         decimal Сумма
-        int Филиал FK
         string Способ_оплаты
-        int Запись FK
+        int Слот_обслуживания FK
     }
 
     SERVICE["Услуга"] {
         int Идентификатор PK
         string Название
-        string Тип
+        string Описание
+        string Категория
         decimal Стоимость
         int Продолжительность
-        string Категория
+        boolean Активность
     }
 
     QUALIFICATION["Услуги мастера"] {
+        int Идентификатор PK
         int Сотрудник FK
         int Услуга FK
     }
 
     SERVICE_ROOM["Доступность услуги в помещении"] {
+        int Идентификатор PK
         int Помещение FK
         int Услуга FK
     }
@@ -86,24 +103,27 @@ erDiagram
 
     BRANCH["Филиал"] {
         int Идентификатор PK
+        string Название
         string Адрес
         string Контакты
         string Режим_работы
     }
 
-    CLIENT ||--|{ APPOINTMENT : "бронирует"
-    CLIENT ||--|| PERSON : "бла"
-    EMPLOYEE ||--|| PERSON : "бла"
-    BRANCH||--|| PERSON : "бла"
+    CLIENT ||--|| PERSON : "является"
+    PERSON ||--|| STATUS_PS : ""
+    PERSON ||--|| BRANCH : ""
     STAFF_SCHEDULE }|--|| EMPLOYEE : "определяет график"
+    EMPLOYEE ||--|| PERSON : ""
     EMPLOYEE }|--|| ROLE : "является"
-    EMPLOYEE }|--|{ QUALIFICATION : "может проводить"
-    SERVICE }|--|{ QUALIFICATION : "проводится"
-    EMPLOYEE ||--|{ APPOINTMENT : "проводит"
-    SERVICE ||--|{ APPOINTMENT : "выполняется"
-    ROOM ||--|{ APPOINTMENT : "проводится в"
-    APPOINTMENT ||--|{ TRANSACTION : "фиксирует оплату"
-    SERVICE }|--|{ SERVICE_ROOM : "может проводиться в"
-    ROOM }|--|{ SERVICE_ROOM : "предназначено для"
+    APPOINTMENT }|--|| EMPLOYEE : "проводит"
+    APPOINTMENT }|--|| CLIENT : "бронирует"
+    APPOINTMENT }|--|| ROOM : "проводится в"
+    APPOINTMENT }|--|| SERVICE : "выполняется"
+    APPOINTMENT ||--|| APPOINTMENT_STATUS : ""
+    TRANSACTION ||--|{ APPOINTMENT : "фиксирует оплату"
+    QUALIFICATION }|--|{ EMPLOYEE : "может проводить"
+    QUALIFICATION }|--|{ SERVICE : "проводится"
+    SERVICE_ROOM }|--|{ SERVICE : "может проводиться в"
+    SERVICE_ROOM }|--|{ ROOM : "предназначено для"
     ROOM }|--|| BRANCH : "находится в"
 ```
